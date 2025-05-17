@@ -3,6 +3,8 @@ so far only login and signup works
 <br>
 if you click projects -> Pay Calculator there isa blank page where i will make the paycalc
 <br>
+<br>
+**How to set up table/database
 sql script to make a table called "users" (put it in a database called users_db)
 ```
 CREATE TABLE IF NOT EXISTS users (
