@@ -6,8 +6,7 @@ if you click projects -> Pay Calculator there is a blank page where i will make 
 <br>
 **How to set up table/database**
 <br>
-<br>
-First set up xampp
+First set up xampp 8.0.30 / PHP 8.0.30 (https://www.apachefriends.org/download.html)
 <br>
 Then run apache and mysql
 <br>
@@ -27,11 +26,28 @@ ADD UNIQUE INDEX email (email);
 ```
 <br>
 
-**for windows**
-<br>
+**Directory setup (windows):**
 <br>
 Where the xampp root folder is navigate to "htdocs"
 <br>
 In htdocs make a new directory:
 <br>
-0\school\2025yr11php\ --> now clone the repo into this folder then wallah
+`0\school\2025yr11php\` --> now clone the repo and move it into this folder then wallah
+<br>
+<br>
+**Directory setup (archlinux):**
+<br>
+cd into htdocs `cd /opt/lampp/htdocs`
+<br>
+In htdocs make a new directory:
+<br>
+now make this directory inside htdocs: `sudo mkdir -p 0/school/2025yr11php/`
+<br>
+now cd into it: `cd 0/school/2025yr11php/`
+<br>
+Make sure the directory is empty and now clone this repo.
+```
+git clone <repository_url> . --the dot at the end is neccesary, indicates to clone in current directory (cd)
+```
+<br>
+magic
