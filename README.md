@@ -2,7 +2,9 @@
 so far only login and signup works
 <br>
 if you click projects -> Pay Calculator there is a blank page where i will make the paycalc
-***passwords dont has because its a schoo project so i want to see my password in the database table***
+<br>
+***passwords dont hash because its a school project so i want to see my password in the database table***
+(adding a hashing and unhashing system would take like 3 lines anyway i think)
 <br>
 <br>
 **How to set up table/database**
