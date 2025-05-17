@@ -47,4 +47,4 @@ now cd into it: `cd 0/school/2025yr11php/`
 <br>
 Make sure the directory is empty and now clone this repo: `git clone https://github.com/Ertdoo/2025-app-comp-u1o2 . --the dot indicates to clone in current directory (cd)`
 <br>
-magic
+or you can just do `sudo -E thunar` and just use the gui lol
