@@ -27,7 +27,8 @@ ADD UNIQUE INDEX email (email);
 ```
 <br>
 <br>
-**For the scripts (windows)**
+
+**for windows**
 <br>
 <br>
 Where the xampp root folder is navigate to "htdocs"
