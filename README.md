@@ -26,7 +26,6 @@ ALTER TABLE users
 ADD UNIQUE INDEX email (email);
 ```
 <br>
-<br>
 
 **for windows**
 <br>
