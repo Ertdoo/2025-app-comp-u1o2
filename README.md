@@ -45,9 +45,6 @@ now make this directory inside htdocs: `sudo mkdir -p 0/school/2025yr11php/`
 <br>
 now cd into it: `cd 0/school/2025yr11php/`
 <br>
-Make sure the directory is empty and now clone this repo.
-```
-git clone <repository_url> . --the dot at the end is neccesary, indicates to clone in current directory (cd)
-```
+Make sure the directory is empty and now clone this repo: `git clone https://github.com/Ertdoo/2025-app-comp-u1o2 . --the dot indicates to clone in current directory (cd)`
 <br>
 magic
