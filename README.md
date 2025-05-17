@@ -2,6 +2,7 @@
 so far only login and signup works
 <br>
 if you click projects -> Pay Calculator there is a blank page where i will make the paycalc
+***passwords dont has because its a schoo project so i want to see my password in the database table***
 <br>
 <br>
 **How to set up table/database**
