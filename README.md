@@ -48,3 +48,6 @@ now cd into it: `cd 0/school/2025yr11php/`
 Make sure the directory is empty and now clone this repo: `git clone https://github.com/Ertdoo/2025-app-comp-u1o2 . --the dot indicates to clone in current directory (cd)`
 <br>
 or you can just do `sudo -E thunar` and just use the gui lol
+<br>
+<br>
+now after you set up xampp and put the files in now start xampp with the gui or if ur on linux use `sudo /opt/lampp/lampp start` and enter this url into your browser: http://localhost/0/school/2025yr11php/
