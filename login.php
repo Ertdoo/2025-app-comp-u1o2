@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']); 
     $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?"); 
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?"); //sql shi
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_start();
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username']; 
-            $_SESSION["session_logged"] = "loggedin";
+            $_SESSION["session_logged"] = $username;
             $message = "Login successful!";
         } else {
             $message = "Incorrect password!";
@@ -52,14 +52,9 @@ include_once "header.php";
 <?php
 include_once "menubar_new.php";
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="d-flex justify-content-center align-items-center vh-100 bg-dark">
-    <form action="login.php" method="POST" style="width: 100%; max-width: 400px;">
+
+<div class="d-flex justify-content-center align-items-center vh-100 bg-dark">
+    <form action="#" method="POST" style="width: 100%; max-width: 400px;">
         <h2 class="text-center mb-4 text-white">Login to existing Account</h2>
         <?php if ($message): ?>
             <div class="alert <?php echo (strpos($message, 'successful') !== false) ? 'alert-success' : 'alert-danger'; ?>">
@@ -74,5 +69,4 @@ include_once "menubar_new.php";
 
         <button type="submit" class="btn btn-primary w-100">Login</button>
     </form>
-</body>
-</html>
+</div>
