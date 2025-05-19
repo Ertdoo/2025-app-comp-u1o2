@@ -6,11 +6,13 @@
       // It's good practice to regenerate the session ID on login/logout 
       // to prevent session fixation, though not strictly the cause of this issue.
       session_regenerate_id(true); 
-      header("Location: index.php"); 
+      header("Location: login.php"); 
       exit();
   }
 ?>
-
+<?php 
+include_once "header.php";
+?>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/0/school/2025yr11php/index.php">11 App Comp</a> <!-- redirects to index.php using absolute paths -->
@@ -72,11 +74,11 @@
             if(isset($_SESSION["session_logged"])) {
               if ($_SESSION["session_logged"] == "loggedout") { ?>
                 <li class="nav-item btn btn-outline-success btn-sm">
-                    <a class="nav-link" href="login.php">Login</a>
+                    <a class="nav-link" href="/0/school/2025yr11php/login.php">Login</a> <!--uses absolute paths-->
                 </li>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="ml-1 nav-item btn btn-outline-warning btn-sm">
-                    <a class="nav-link" href="signup.php">Sign up</a>
+                    <a class="nav-link" href="/0/school/2025yr11php/signup.php">Sign up</a>
                 </li>
               <?php } else { ?>
                 <li class="nav-item btn btn-outline-danger btn-sm">
@@ -85,16 +87,17 @@
               <?php } ?>
             <?php } else { ?>
               <li class="nav-item btn btn-outline-success btn-sm">
-                    <a class="nav-link" href="login.php">Login</a>
+                    <a class="nav-link" href="/0/school/2025yr11php/login.php">Login</a>
                 </li>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="ml-1 nav-item btn btn-outline-warning btn-sm">
-                    <a class="nav-link" href="signup.php">Sign up</a>
+                    <a class="nav-link" href="/0/school/2025yr11php/signup.php">Sign up</a>
                 </li>
             <?php } ?>
           </ul>
     </div>
   </div>
 </nav>
+
 
   
