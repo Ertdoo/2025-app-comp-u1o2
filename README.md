@@ -5,6 +5,7 @@ if you click projects -> Pay Calculator there is a blank page where i will make 
 <br>
 ***passwords dont hash because its a school project so i want to see my password in the database table***
 (adding a hashing and unhashing system would take like 3 lines anyway i think)
+**also im using absolute paths for page redirects so changing the file structure may be a bit iffy**
 <br>
 <br>
 **How to set up table/database**
