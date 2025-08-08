@@ -1,0 +1,47 @@
+.btn-custom-purple {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #8a2be2;
+  --bs-btn-border-color: #8a2be2;
+  --bs-btn-hover-color: #8a2be2;
+  --bs-btn-hover-bg: #892be200;
+  --bs-btn-hover-border-color: #8a2be2;
+  --bs-btn-focus-shadow-rgb: #8a2be2;
+  --bs-btn-active-color: #8a2be2;
+  --bs-btn-active-bg: #8a2be2;
+  --bs-btn-active-border-color: #4e1a80;
+}
+
+/* .btn-custom-purple {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #FFC000;
+  --bs-btn-border-color: #FFC000;
+  --bs-btn-hover-color: #FFC000;
+  --bs-btn-hover-bg: #892be200;
+  --bs-btn-hover-border-color: #FFC000;
+  --bs-btn-focus-shadow-rgb: #FFC000;
+  --bs-btn-active-color: #FFC000;
+  --bs-btn-active-bg: #FFC000;
+  --bs-btn-active-border-color: #FFC000;
+} */
+
+.btn-outline-custom {
+  /*
+  * --btn-custom-color: This is the color for the text and border.
+  * Change this variable to customize the button's color.
+  */
+  --btn-custom-color: #df8600; /* Default to Bootstrap's primary blue */
+
+  --bs-btn-color: var(--btn-custom-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--btn-custom-color);
+
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--btn-custom-color);
+  --bs-btn-hover-border-color: var(--btn-custom-color);
+
+  --bs-btn-focus-shadow-rgb: var(--btn-custom-color);
+
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--btn-custom-color);
+  --bs-btn-active-border-color: var(--btn-custom-color);
+}
